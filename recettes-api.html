@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titre>Recettes dynamiques</titre>
+    <link rel="stylesheet" href="recettes-api.css">
+</head>
+<body>
+
+    <header class="entete">
+        <h1>🍳 Mes recettes dynamiques</h1>
+        <p>Une base de données mondiale, en direct</p>
+    </header>
+
+    <div class="barre-recherche">
+        <input
+            type="search"
+            id="champ-recherche"
+            placeholder="Chercher une recette (crepes, pizza, chicken...)"
+            autocomplete="off">
+        <button id="btn-aleatoire">🎲 Au hazard</button>
+    </div>
+
+    <main id="resultats" class="galerie">
+        <!--<p class="chargement">Chargement...</p>-->
+
+    </main>
+
+    <!-- ===== MODAL (caché par défaut) ===== -->
+    <div class="modal" id="modal">
+        <div class="modal-contenu">
+            <button class="modal-fermer" id="modal-fermer">✕</button>
+            <div id="modal-corps">
+                <!-- Le contenu sera injecté par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="recettes-api.js"></script>
+</body>
+</html>
